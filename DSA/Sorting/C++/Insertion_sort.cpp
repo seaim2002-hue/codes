@@ -17,7 +17,7 @@ void insertionsort(int arr[], int size) {
 }
 
 /*
-//using while loop
+//using while loop.
 void insertionsort(int arr[], int size) {
     for (int i = 1; i < size; i++) {
         int temp = arr[i];
