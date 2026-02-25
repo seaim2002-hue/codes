@@ -2,23 +2,6 @@
 using namespace std;
 
 void insertionsort(int arr[], int size) {
-    for(int i=1; i<size; i++) {
-        int temp = arr[i];
-        int j = i-1;
-        for(; j>=0; j--) {
-            if(arr[j] > temp){
-                arr[j+1] = arr[j];
-            } else {
-                break;
-            }
-        }
-        arr[j+1] = temp;
-    }
-}
-
-/*
-//using while loop.
-void insertionsort(int arr[], int size) {
     for (int i = 1; i < size; i++) {
         int temp = arr[i];
         int j = i - 1;
@@ -30,7 +13,6 @@ void insertionsort(int arr[], int size) {
         arr[j + 1] = temp;
     }
 }
-*/
 
 int main () {
     int arr[] = {4,50,45,62,1,9,7,5,14};
